@@ -79,9 +79,8 @@ st.markdown(
 # -------------------------------------------------------
 # 3. LOAD DATA
 # -------------------------------------------------------
-@st.cache_data
 def load_data():
-    df = pd.read_csv("fraunhofer_enriched.csv")
+    df = pd.read_csv("C:/Users/vuli/Documents/Elearning-Analysis/elearning-analysis/fraunhofer_enriched.csv")
 
     if "ROI" not in df.columns:
         rng = np.random.default_rng(42)
